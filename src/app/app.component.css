@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    background-color: dodgerblue;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    color: blanchedalmond;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+}

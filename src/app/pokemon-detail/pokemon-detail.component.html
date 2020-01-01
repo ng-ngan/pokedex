@@ -1,0 +1,20 @@
+
+    <div class="card">
+        <div class="card-header">
+            <span>ID:</span><div>{{pokemon.id}}</div>
+            <span>Name:</span><div>{{pokemon.name}}</div> 
+            <span>Weight:</span><div>{{pokemon.weight}}</div>
+            <span>Height:</span><div>{{pokemon.height}}</div>
+            <span>HP:</span><div>{{pokemon.stats.hp}}</div>
+            <span>Attack:</span><div>{{pokemon.stats.attack}}</div>
+            <span>Defense:</span><div>{{pokemon.stats.defense}}</div>
+            <span>Sp_Attack:</span><div>{{pokemon.stats.sp_attack}}</div>
+            <span>Sp_Defense:</span><div>{{pokemon.stats.sp_attack}}</div>
+            <span>Speed:</span> <div>{{pokemon.stats.speed}}</div>
+
+            <div *ngFor='let type of pokemon.types'>
+                <div>{{type}}</div>
+            </div>
+        </div>
+        <img src = "{{pokemon.sprite}}">
+    </div>

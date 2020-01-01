@@ -1,0 +1,15 @@
+<form>
+    <input  [(ngModel)] = 'searchText' type="text" name='search' placeholder="Search...">
+</form>
+
+<div class="container">
+    <div *ngFor = "let pokemon of pokemons | filter : searchText">
+        <div class="card" [routerLink]="['/pokemon', pokemon.id]">
+            <div class="card-header">
+                <div>{{pokemon.id}}</div>
+                <div>{{pokemon.name}}</div> 
+            </div>
+            <img src = "{{pokemon.sprite}}">
+            </div>
+        </div>
+</div>

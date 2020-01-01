@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    height: 8em;
+    width: 12em;
+    background: #87cefa;
+    border-radius: 1em;
+    margin: 0.3em;
+    text-align: center;
+}
+.card-header {
+    display: flex;
+    justify-content: space-around;
+}
