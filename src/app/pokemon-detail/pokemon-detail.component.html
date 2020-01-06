@@ -1,21 +1,8 @@
+<div *ngIf='pokemon; else loading'>
+    {{pokemon.name}}
+    {{pokemon.id}}
+    {{pokemon.height}}
+    <img src = {{pokemon.sprites.front_default}} >
+</div>
+<ng-template #loading> Please wait. Loading .... </ng-template>
 
-    <h3>The details of pokemon</h3>
-    <div class="card">
-        <div class="card-header">
-            <div>ID:<span>{{pokemon.id}}</span></div>
-            <div>Name:<span>{{pokemon.name}}</span></div>
-            <div>Weight:<span>{{pokemon.weight}}</span></div>
-            <div>Height:<span>{{pokemon.height}}</span></div>
-            <div>HP:<span>{{pokemon.stats.hp}}</span></div>
-            <div>Attack:<span>{{pokemon.stats.attack}}</span></div>
-            <div>Defense:<span>{{pokemon.stats.defense}}</span></div>
-            <div>Sp_Attack:<span>{{pokemon.stats.sp_attack}}</span></div>
-            <div>Sp_Defense:<span>{{pokemon.stats.sp_attack}}</span></div>
-            <div>Speed:<span>{{pokemon.stats.speed}}</span></div>
-
-            <div *ngFor='let type of pokemon.types'>
-                <div>{{type}}</div>
-            </div>
-        </div>
-        <img src = "{{pokemon.sprite}}">
-    </div>
