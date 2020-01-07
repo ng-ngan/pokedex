@@ -1,8 +1,13 @@
-<div *ngIf='pokemon; else loading'>
-    {{pokemon.name}}
-    {{pokemon.id}}
-    {{pokemon.height}}
-    <img src = {{pokemon.sprites.front_default}} >
-</div>
-<ng-template #loading> Please wait. Loading .... </ng-template>
-
+  <div class="pokemonDetails">
+    <h2>Pokemon's details</h2>
+    <table *ngIf='pokemon; else loading'>
+        <tr><td class="detail-title">Name:</td><td class="detail-value">{{pokemon.name}}</td></tr>
+        <tr><td class="detail-title">Id:</td><td class="detail-value">{{pokemon.id}}</td></tr>
+        <tr><td class="detail-title">Height:</td><td class="detail-value">{{pokemon.height}}</td></tr>
+        <tr><td class="detail-title">Weight:</td><td class="detail-value">{{pokemon.weight}}</td></tr>
+        <tr><td class="detail-title">Stats:</td><td class="detail-value">{{pokemon.stats[0].base_stat}}</td></tr>
+        <tr><td class="detail-title">Types:</td><td class="detail-value">{{pokemon.types[0].type.name}}</td></tr>
+        <tr><td class="detail-title">Sprites:</td><img src = {{pokemon.sprites.front_default}} alt ="image"></tr>
+    </table>
+    <ng-template #loading> Please wait. Loading .... </ng-template>
+  </div>

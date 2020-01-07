@@ -1,0 +1,16 @@
+.pokemonDetails {
+  background-color: skyblue;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 50px ;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.detail-title {
+    flex: 1;
+    font-weight: bolder;
+}
+.detail-value {
+    flex: 3;
+}

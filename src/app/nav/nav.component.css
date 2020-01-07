@@ -1,7 +1,7 @@
 .nav-container {
-    height: 50px;
+    min-height: 50px;
     background-color: dodgerblue;
-    width: 100%;
+    min-width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -33,5 +33,5 @@ li {
     cursor: pointer;
 }
 li:hover {
-    color: lightslategrey;
+    color:coral;
 }

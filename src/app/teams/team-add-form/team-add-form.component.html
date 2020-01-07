@@ -1,35 +1,35 @@
 <h2>Create a team</h2>
 <form (ngSubmit) = 'onSubmit()'>
-
     <div class='form-group'>
-        <label>Team name </label>  
-        <input class="form-control" [(ngModel)] = 'teamName' name='name' type="text" required></div>  
-    <div><label>Select pokemon 1: </label>
+        <label>Team's Name: </label>
+        <input class="form-control" [(ngModel)] = 'teamName' name='name' type="text" required>
+    </div>
+    <div><label>Selected pokemon 1: </label>
         <select [(ngModel)] ='pokeValues[0]' name='pk1' required>
                 <option *ngFor='let pokemon of pokemons' value='{"id":"{{pokemon.id}}", "name":"{{pokemon.name}}", "sprite":"{{pokemon.sprites.front_default}}"}'>{{pokemon.name | titlecase}}<option>
         </select>
     </div>
-    <div><label>Select pokemon 2: </label>
+    <div><label>Selected pokemon 2: </label>
         <select [(ngModel)] ='pokeValues[1]' name='pk2' required>
             <option *ngFor='let pokemon of pokemons' value='{"id":"{{pokemon.id}}", "name":"{{pokemon.name}}", "sprite":"{{pokemon.sprites.front_default}}"}'>{{pokemon.name | titlecase}}<option>
         </select>
     </div>
-    <div><label>Select pokemon 3: </label>
+    <div><label>Selected pokemon 3: </label>
         <select [(ngModel)] ='pokeValues[2]' name='pk3' required>
             <option *ngFor='let pokemon of pokemons' value='{"id":"{{pokemon.id}}", "name":"{{pokemon.name}}", "sprite":"{{pokemon.sprites.front_default}}"}'>{{pokemon.name | titlecase}}<option>
         </select>
     </div>
-    <div><label>Select pokemon 4: </label>
+    <div><label>Selected pokemon 4: </label>
         <select [(ngModel)] ='pokeValues[3]' name='pk4' required>
             <option *ngFor='let pokemon of pokemons' value='{"id":"{{pokemon.id}}", "name":"{{pokemon.name}}", "sprite":"{{pokemon.sprites.front_default}}"}'>{{pokemon.name | titlecase}}<option>
         </select>
     </div>
-    <div><label>Select pokemon 5: </label>
+    <div><label>Selected pokemon 5: </label>
         <select [(ngModel)] ='pokeValues[4]' name='pk5' required>
             <option  *ngFor='let pokemon of pokemons' value='{"id":"{{pokemon.id}}", "name":"{{pokemon.name}}", "sprite":"{{pokemon.sprites.front_default}}"}'>{{pokemon.name | titlecase}}<option>
         </select>
     </div>
-    <div><label>Select pokemon 6: </label>
+    <div><label>Selected pokemon 6: </label>
         <select [(ngModel)] ='pokeValues[5]' name='pk6' required>
             <option  *ngFor='let pokemon of pokemons' value='{"id":"{{pokemon.id}}", "name":"{{pokemon.name}}", "sprite":"{{pokemon.sprites.front_default}}"}'>{{pokemon.name | titlecase}}<option>
         </select>

@@ -3,10 +3,8 @@
         <div class="team-name">{{team.name}}</div>
         <div class="pokemon-container">
             <div  class="pokemon-card" *ngFor='let pokemon of team.pokemons'>
-                {{pokemon.id}}
-                <img src='{{pokemon.sprite}}'>
-                {{pokemon.name}}
-                
+                  {{pokemon.name}}
+                <img src='{{pokemon.sprite}}' alt ="image">
             </div>
         </div>
     </div>

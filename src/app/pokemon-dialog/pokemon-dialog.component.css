@@ -1,17 +1,13 @@
-.bar{
-    width: 250px;
 
+.bar{
+    min-width: 400px;
 }
 .percent {
-    height: 10px;
+    height: 20px;
 }
-
-
-
 .percent:nth-child(odd){
-    background-color: greenyellow;
+    background-color:  orange;
 }
-
 .percent:nth-child(even){
-    background-color: orange;
+    background-color: greenyellow;
 }
