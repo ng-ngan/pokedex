@@ -10,7 +10,7 @@ export class PokedexService {
 
   pokemonSubject = new BehaviorSubject<any>([]);
 
-  constructor(private httpclient : HttpClient) { 
+  constructor(private httpclient : HttpClient) {
     this.getPokemons();
   }
 
@@ -18,13 +18,13 @@ export class PokedexService {
   getPokemons(){
     var pokemons= [];
     for (let id = 1; id <= this.NUM_POKEMONS; id ++ ){
-      this.getPokemomById(id).subscribe((data: any) => pokemons.push(data));
+      this.getPokemonById(id).subscribe((data: any) => pokemons.push(data));
     }
 
     this.pokemonSubject.next(pokemons);
   }
 
-  getPokemomById(id){
+  getPokemonById(id){
     return this.httpclient.get("https://pokeapi.co/api/v2/pokemon/"+ id);
   }
 

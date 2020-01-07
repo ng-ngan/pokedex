@@ -1,3 +1,4 @@
+<div class = "header">Pokemons</div>
 <form action="">
     <input [(ngModel)]="searchText" class="search" type="text"  name='search' placeholder="Search ... " >
 </form>
@@ -6,11 +7,12 @@
         <div *ngFor="let p of pokemons | filterPokemon : searchText ">
             <div *ngIf= "p">
                 <div class="card" [routerLink]="['/pokemon', p.id]">
-                    <h1>{{p.name}}</h1>
-                    <h3>{{p.id}}</h3>
-                    <img (mouseenter)="openDialog(p.id)" src = {{p.sprites.front_default}}>
+                    <div class="card-header">
+                      <h3>{{p.name}}</h3>
+                      <h3>{{p.id}}</h3>
+                    </div>
+                    <img (mouseenter)="openDialog(p.id)" src = {{p.sprites.front_default}} alt="image">
                 </div>
             </div>
-        </div>   
+        </div>
 </div>
-
