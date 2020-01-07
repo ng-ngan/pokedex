@@ -1,0 +1,14 @@
+<div *ngIf=" teams && teams.length > 0 ; else nothing">
+    <div  class="team-card" *ngFor='let team of teams'>
+        <div class="team-name">{{team.name}}</div>
+        <div class="pokemon-container">
+            <div  class="pokemon-card" *ngFor='let pokemon of team.pokemons'>
+                {{pokemon.id}}
+                <img src='{{pokemon.sprite}}'>
+                {{pokemon.name}}
+                
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #nothing>No teams are created !!!</ng-template>

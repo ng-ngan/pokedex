@@ -9,18 +9,13 @@ import { PokedexService } from '../pokedex.service';
 })
 export class PokemonDetailComponent implements OnInit {
   pokemon:any;
- 
-
+  
   constructor(private activatedRoute: ActivatedRoute,
     private pokedexService : PokedexService) { }
 
   ngOnInit() {
     let id = this.activatedRoute.snapshot.paramMap.get('id');
-    this.pokedexService.getPokemonById(id).subscribe((data: any) => this.pokemon = data);
-    
+    this.pokedexService.getPokemomById(id).subscribe((data: any) => this.pokemon = data);
   }
- 
 
-  };
-
-
+}

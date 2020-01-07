@@ -14,7 +14,7 @@ export class PokemonDialogComponent implements OnInit {
   private pokedexService : PokedexService) { }
 
   ngOnInit() {
-    this.pokedexService.getPokemonById(this.data.id).subscribe( (result : any) => { this.pokemon = result});
+    this.pokedexService.getPokemomById(this.data.id).subscribe( (result : any) => { this.pokemon = result});
   }
 
 }

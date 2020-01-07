@@ -11,7 +11,12 @@ import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pokemons/filter';
 import {MatDialogModule} from '@angular/material/';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PokemonDialogComponent } from './pokemon-dialog/pokemon-dialog.component'; 
+import { PokemonDialogComponent } from './pokemon-dialog/pokemon-dialog.component';
+import { TeamListComponent } from './teams/team-list/team-list.component';
+import { NavComponent } from './nav/nav.component';
+import { TeamAddFormComponent } from './teams/team-add-form/team-add-form.component';
+import { TeamsComponent } from './teams/teams.component'; 
+import { LocalStorageService } from './local-storage.service';
 
 
 @NgModule({
@@ -20,7 +25,11 @@ import { PokemonDialogComponent } from './pokemon-dialog/pokemon-dialog.componen
     PokemonsComponent,
     PokemonDetailComponent,
     FilterPipe,
-    PokemonDialogComponent
+    PokemonDialogComponent,
+    TeamListComponent,
+    NavComponent,
+    TeamsComponent,
+    TeamAddFormComponent
   ],
   imports: [
     BrowserModule,
@@ -30,8 +39,8 @@ import { PokemonDialogComponent } from './pokemon-dialog/pokemon-dialog.componen
     MatDialogModule,
     BrowserAnimationsModule
   ],
-  providers: [PokedexService],
-  bootstrap: [AppComponent],
+  providers: [PokedexService, LocalStorageService],
+  bootstrap: [AppComponent, ],
   entryComponents: [PokemonDialogComponent]
 })
 export class AppModule { }

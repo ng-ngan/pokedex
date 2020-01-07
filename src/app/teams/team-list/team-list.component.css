@@ -1,0 +1,28 @@
+.team-card {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+    display: flex;
+    align-items: center;
+}
+
+.team-name {
+    flex: 1;
+    font-size: larger;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.pokemon-container {
+    flex: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightsteelblue;
+}
+.pokemon-card {
+    background-color: rgb(113, 142, 180);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
