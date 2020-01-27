@@ -4,10 +4,34 @@
 }
 .percent {
     height: 20px;
+    background:  orange;
 }
-.percent:nth-child(odd){
-    background-color:  orange;
+
+.color1 {
+  background:  orange;
 }
-.percent:nth-child(even){
-    background-color: greenyellow;
+
+.color2 {
+  background:  greenyellow;
 }
+/*$$
+.percent1:nth-child{
+    background:  orange;
+}
+.percent3:nth-child{
+    background:  orange;
+}
+.percent5:nth-child{
+    background:  orange;
+}
+
+.percent0:nth-child{
+    backgrounds: greenyellow;
+}
+.percent2:nth-child{
+    backgrounds: greenyellow;
+}
+.percent4:nth-child{
+    backgrounds: greenyellow;
+}
+*/
